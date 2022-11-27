@@ -1,0 +1,82 @@
+/************ Règles générales et de la partie haute de la page ************/
+
+/* Variables */
+:root {
+    --largeur-contenu-plat: 200px;
+    --largeur-margeInt-plat: 15px;
+}
+
+/* Titre de la page */
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: tomato;
+}
+
+/* Règles concernant le conteneur du champ de recherche */
+#recherche {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Règles du champ lui-même */
+#champ {
+    box-sizing: border-box;
+    width: 400px;
+    height: 2.2em;
+    border-radius: 10px;
+    box-shadow: 0;
+}
+
+/* Règles de la partie contenant les composants Card */
+#conteneur_recettes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+/******************* Règles relatives au composant Card *******************/
+
+/* Règles générales (conteneur div des éléments constituant le composant) */
+.plat {
+    margin: 10px;
+    padding: var(--largeur-margeInt-plat);
+    width: var(--largeur-contenu-plat);
+    border: solid 2px tomato;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Règles concernant le titre d'un plat */
+.titre {
+    margin: 5px 0px 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Règles concernant l'origine du plat */
+.origine {
+    margin: 0px 0px 15px;
+}
+
+/* Règles concernant l'image contenue dans le composant */
+img {
+    width: var(--largeur-contenu-plat);
+    border-radius: 10px;
+}
+
+/* Règles concernant le texte de la recette */
+.recette {
+    font-size: 0.9em;
+    text-align: justify;
+    max-height: 105px;
+    overflow: hidden;
+    text-overflow: '...';
+}
