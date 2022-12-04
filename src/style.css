@@ -1,17 +1,38 @@
-/************ Règles générales et de la partie haute de la page ************/
-
-/* Variables */
-:root {
-    --largeur-contenu-plat: 200px;
-    --largeur-margeInt-plat: 15px;
-}
+/************ Règles concernant les parties communes des deux pages Recettes et blog ************/
 
 /* Titre de la page */
 h1 {
     margin-bottom: 30px;
     text-align: center;
+    font-size: 2.5em;
     color: tomato;
 }
+
+/***** Règles relatives au Menu *****/
+nav ul {
+    padding-top: 10px;
+    display: flex;
+}
+
+nav li {
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+nav a {
+    /* Les NavLink sont transformés en <a>, on peut donc les styler avec le sélecteur a */
+    text-decoration: none;
+    color: tomato;
+    font-size: 1.75em;
+}
+
+nav a.actif {
+    /* La classe "actif" est ajoutée aux <NavLink> lorsque le lien correspondant est actif (voir Menu.js) */
+    text-decoration: underline;
+}
+
+
+/***************************** Règles relatives à la page Recettes *****************************/
 
 /* Règles concernant le conteneur du champ de recherche */
 #recherche {
@@ -29,7 +50,15 @@ h1 {
     box-shadow: 0;
 }
 
-/* Règles de la partie contenant les composants Card */
+/***** Règles concernant les composants Card *****/
+
+/* Variables */
+:root {
+    --largeur-contenu-plat: 200px;
+    --largeur-margeInt-plat: 15px;
+}
+
+/* Règles du conteneur de tous les composants */
 #conteneur_recettes {
     display: flex;
     flex-direction: row;
@@ -38,10 +67,7 @@ h1 {
 
 }
 
-
-/******************* Règles relatives au composant Card *******************/
-
-/* Règles générales (conteneur div des éléments constituant le composant) */
+/* Règles du conteneur div des éléments constituant le composant */
 .plat {
     margin: 10px;
     padding: var(--largeur-margeInt-plat);
@@ -79,4 +105,114 @@ img {
     max-height: 105px;
     overflow: hidden;
     text-overflow: '...';
+}
+
+
+/******************************* Règles relatives à la page Blog *******************************/
+
+/***** Règles du formulaire *****/
+
+/* Règle du div conteneur du formulaire */
+#div_formulaire {
+    width: 35%;
+    margin: 0px auto 50px auto;
+}
+
+/* Règle de l'élément form */
+#formulaire_blog {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Règle des éléments flex du formulaire */
+#formulaire_blog>* {
+    margin-bottom: 15px
+}
+
+/* Règles des champs de saisie */
+#formulaire_blog .champ_saisie {
+    padding: 5px 10px;
+    border: solid 1px grey;
+    border-radius: 5px;
+}
+
+/* Règles de l'élément p du formulaire (indication sur le nombre de caractères) */
+#formulaire_blog p {
+    margin-top: 0px;
+    align-self: center;
+    color: tomato;
+    font-weight: bold;
+}
+
+/* Règles du bouton de soumission du formulaire */
+#formulaire_blog #envoi_form {
+    width: 175px;
+    padding: 4px 0px;
+    /* tous les éléments flex du conteneur flex #formulaire_blog ont une marge inférieure de 10px, sauf le dernier élément (celui-ci), pour pouvoir fixer la marge inférieure de la partie formulaire avec le div #div_formulaire */
+    margin-bottom: 0px;
+    background-color: tomato;
+    border: solid 1px tomato;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+
+/*
+#envoi_form:hover {
+    background-color: black;
+}
+*/
+
+/***** Règles des articles *****/
+
+/* Règles du conteneur d'articles */
+#div_articles {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Règles générales d'un article */
+.article {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: solid 1px tomato;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Règles de l'en-tête d'un article (auteur et date) */
+.en-tete {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.en-tete p {
+    margin: 0;
+}
+
+.en-tete p:first-of-type {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.en-tete p:last-of-type {
+    font-style: italic;
+}
+
+/* Règles du conteneur des boutons d'un article */
+.boutons {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+/* Règles des boutons eux-mêmes */
+.boutons button {
+    margin-left: 10px;
+    padding: 1px 10px;
 }

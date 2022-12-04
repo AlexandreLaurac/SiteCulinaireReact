@@ -1,0 +1,34 @@
+{
+  "articles": [
+    {
+      "author": "Master Chef",
+      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.",
+      "date": 1669059012451,
+      "id": 1
+    },
+    {
+      "author": "Philippe Etchebest",
+      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.\n\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.",
+      "date": 1669058990752,
+      "id": 2
+    },
+    {
+      "author": "Gordon Ramsay",
+      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. Odit quis adipisci illo sit porro recusandae? Sequi, dolorum repellendus doloremque qui tempora beatae.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente doloribus vel sunt laborum eos enim odit maxime corporis vero nihil voluptatum a, ullam delectus ad sit. ",
+      "date": 1669058964425,
+      "id": 3
+    },
+    {
+      "author": "Alain Ducasse",
+      "content": "Ce site web est un trésor. Après une longue carrière de cuisinier, je sais que la relève est là et que je peux m'appuyer sur vous.\nLongue vie à votre blog et vive la cuisine !",
+      "date": 1670079327030,
+      "id": 4
+    },
+    {
+      "author": "Nobert commis d'office",
+      "content": "Votre site est un régal !\nIl y a des tas de recettes que je vais pouvoir proposer à mes criminels de la cuisine... \nA bientôt dans mon émission et mes restaurants à Miami !",
+      "date": 1670080783774,
+      "id": 5
+    }
+  ]
+}
